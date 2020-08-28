@@ -1,0 +1,2717 @@
+
+<link href="hexxen1733_character_sheet_roll20.css" rel="stylesheet" type="text/css">
+<div class="sheet-wrapper">
+
+    <div class="columns is-mobile">
+        <div class="column">
+            <div class="tab-buttons">
+                <!-- Buttons translation data-i18 span -->
+                <span class="sheet-is-hidden" data-i18n="lang_act_general">Allgemein</span>
+                <span class="sheet-is-hidden" data-i18n="lang_act_status">Körperlicher und geistiger Zustand</span>
+                <span class="sheet-is-hidden" data-i18n="lang_act_skills">Fertigkeiten</span>
+                <span class="sheet-is-hidden" data-i18n="lang_act_battle">Kampf</span>
+                <span class="sheet-is-hidden" data-i18n="lang_act_ownership">Besitz</span>
+
+                <button type="action" name="act_general" value='[[@{set_lang_act_general}]]' >Allgemein</button>
+                <button type="action" name="act_status"  value='[[@{set_lang_act_status}]]'>Körperlicher und geistiger Zustand</button>
+                <button type="action" name="act_skills" value='[[@{set_lang_act_skills}]]' >Fertigkeiten</button>
+                <button type="action" name="act_battle" value='[[@{set_lang_act_battle}]]' >Kampf</button>
+                <button type="action" name="act_ownership"  value='[[@{set_lang_act_ownership}]]'>Besitz</button>
+            </div>
+        </div>
+    </div>
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='general'  />
+    <div class='sheet-general'>
+
+        <div class="columns is-mobile">
+            <div class="column sheet-border-right">
+                <h2 class="title is-2"><span data-i18n="lang_title_general">Allgemein</span></h2>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_name">Name</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_name" placeholder="Name" type="text" name="attr_Name">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_level">Jägerstufe</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_level" placeholder="Jägerstufe" type="number" name="attr_Level">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_profession">Profession</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_profession" placeholder="Profession" type="text" name="attr_Profession">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_motivation">Motivation</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_motivation" placeholder="Motivation" type="text" name="attr_Motivation">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_advantage">Vorteil</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_advantage" placeholder="Vorteil" name="attr_Advantage"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_corruption">Verderbnis</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_corruption" placeholder="Verderbnis" type="number" name="attr_Corruption">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_blessing">Segnungen</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_blessing" placeholder="Segnungen" type="number" name="attr_Blessing">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <h3 class="title is-3"><span data-i18n="lang_title_role">Rolle</span></h3>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_part1">Rolle №1</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_part1" placeholder="Rolle №1" type="text" name="attr_Part1">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_part2">Rolle №2</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_part2" placeholder="Rolle №2" type="text" name="attr_Part2">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_part3">Rolle №3</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_part3" placeholder="Rolle №3" type="text" name="attr_Part3">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_part4">Rolle №4</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_part4" placeholder="Rolle №4" type="text" name="attr_Part4">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <h3 class="title is-3"><span data-i18n="lang_title_characterDescription">Zusätzliche Charakterbeschreibung</span></h3>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_age">Alter</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_age" placeholder="Alter" type="number" name="attr_Age">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_look">Aussehen</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_look" placeholder="Aussehen" name="attr_Look"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_quirk">Ticks und Macken</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_quirk" placeholder="Ticks und Macken" name="attr_Quirk"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_fear">Ängste</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_fear" placeholder="Ängste" name="attr_Fear"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_goal">Ziele</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_goal" placeholder="Ziele" name="attr_Goal"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_quotation">Typisches Zitat</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_quotation" placeholder="Typisches Zitat" name="attr_Quotation"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                
+                <h3 class="title is-3"><span data-i18n="lang_title_originFamily">Herkunft und Familie</span></h3>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_hometown">Heimatort</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_hometown" placeholder="Heimatort" type="text" name="attr_Hometown">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_occupationParents">Beruf der Eltern</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_occupationParents" placeholder="Beruf der Eltern" name="attr_Occupation_parents"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_kinfolk">Wichtige Verwandte</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_kinfolk" placeholder="Wichtige Verwandte" name="attr_Kinfolk"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_education">Ausbildung/Studium</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_education" placeholder="Ausbildung/Studium" name="attr_Education"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_influence">Wichtige Einflüsse</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_influence" placeholder="Wichtige Einflüsse" name="attr_Influence"></textarea>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="column">
+                
+                <h3 class="title is-3"><span data-i18n="lang_title_spiritualAttributes">Geistige Attribute</span></h3>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_sin">Sinnesschärfe Sin</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Sin">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_wis">Wissen Wis</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Wis">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_wil">Willenskraft Wil</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Wil">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_idea">Ideen  [=Wis]</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Idea">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <h3 class="title is-3"><span data-i18n="lang_title_physicalAttributes">Körperliche Attribute</span></h3>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_kkr">Körperkraft Kkr</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Kkr">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_ath">Athletik Ath</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Ath">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_ges">Geschick Ges</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Ges">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_coups">Coups  [=Ath]</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Coups">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <h3 class="title is-3"><span data-i18n="lang_title_derivedResources">Abgeleitete Ressourcen</span></h3>
+
+                <div class="field is-horizontal">
+                    
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_lpMod">Basis-Lebenspunkte [Kkr+Wil+7]</span></label>
+                    </div>
+
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" placeholder="0" type="number" name="attr_LPMod" value="(@{Kkr}+@{Wil}+7)" disabled="true">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">                
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_inMod">Initiative [Sin+Ges]</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" placeholder="0" type="number" name="attr_inMod" value="(@{Sin}+@{Ges})" disabled="true">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <h3 class="title is-3"><span data-i18n="lang_title_generalSkills">Allgemeine Fertigkeiten</span></h3>
+
+
+                <table class="table is-hoverable is-striped is-fullwidth">
+                    <thead>
+                    <tr>
+                        <th><span data-i18n="lang_name">Name</span></th>
+                        <th data-i18n-title="lang_abbr_skillValue" title="[[@{set_lang_abbr_skillValue}]]"><span data-i18n="lang_skillValue">FW</span></th>
+                        <th data-i18n-title="lang_abbr_attrAbbreviations" title="[[@{set_lang_abbr_attrAbbreviations}]]"><span data-i18n="lang_attrAbbreviations">Attribut</span></th>
+                        <th><abbr>Summe</abbr></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th><span data-i18n="lang_acrobatics">Akrobatik</span></th>
+                        <td>
+                            <input class="" placeholder="0" value="0" type="number" name="attr_Acrobatics">
+                        </td>
+                        <td>
+                            <span data-i18n="lang_ath_short">[+Ath]</span> <span class="sub" name="attr_Ath"></span>
+                        </td>
+                        <td>
+                            <input class="" placeholder="0" type="number" name="attr_AcrobaticsMod" value="(@{Acrobatics}+@{Ath})" disabled="true">
+                        </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_attention">Aufmerksamkeit</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Attention">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_sin_short">[+Sin]</span> <span class="sub" name="attr_Sin"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_AttentionMod" value="(@{Attention}+@{Sin})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_recognition">Erkennen</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Recognition">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_sin_short">[+Sin]</span> <span class="sub" name="attr_Sin"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_RecognitionMod" value="(@{Recognition}+@{Sin})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_firstaid">Erste Hilfe</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Firstaid">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_wis_short">[+Wis]</span> <span class="sub" name="attr_Wis"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_FirstaidMod" value="(@{Firstaid}+@{Wis})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_dexterity">Fingerfertigkeit</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Dexterity">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_ges_short">[+Ges]</span> <span class="sub" name="attr_Ges"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_DexterityMod" value="(@{Dexterity}+@{Ges})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_mentalstrength">Geistesstärke</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Mentalstrength">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_wil_short">[+Wil]</span> <span class="sub" name="attr_Wil"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_MentalstrengthMod" value="(@{Mentalstrength}+@{Wil})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_craft">Handwerken</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Craft">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_ges_short">[+Ges]</span>&nbsp;<span class="sub" name="attr_Ges"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_CraftMod" value="(@{Craft}+@{Ges})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_secretiveness">Heimlichkeit</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Secretiveness">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_ath_short">[+Ath]</span> <span class="sub" name="attr_Ath"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_SecretivenessMod" value="(@{Secretiveness}+@{Ath})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_countryAndPeople">Land und Leute</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_CountryAndPeople">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_wis_short">[+Wis]</span> <span class="sub" name="attr_Wis"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_CountryAndPeopleMod" value="(@{CountryAndPeople}+@{Wis})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_rhetoric">Redekunst</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Rhetoric">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_wil_short">[+Wil]</span> <span class="sub" name="attr_Wil"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_RhetoricMod" value="(@{Rhetoric}+@{Wil})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_strength">Muskelspiel</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Strength">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_StrengthMod" value="(@{Strength}+@{Kkr})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_reflexes">Reflexe</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Reflexes">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_sin_short">[+Sin]</span> <span class="sub" name="attr_Sin"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_ReflexesMod" value="(@{Reflexes}+@{Sin})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_toRide">Reiten</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_ToRide">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_ath_short">[+Ath]</span> <span class="sub" name="attr_Ath"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_ToRideMod" value="(@{ToRide}+@{Ath})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_impassivity">Unempfindlichkeit</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Impassivity">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                            </td>
+                            <td>
+                                <input class="" placeholder="0" type="number" name="attr_ImpassivityMod" value="(@{Impassivity}+@{Kkr})" disabled="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span data-i18n="lang_knowledge">Wissensgebiete</span></th>
+                            <td>
+                                <input class="" placeholder="0" value="0" type="number" name="attr_Knowledge">
+                            </td>
+                            <td>
+                                <span data-i18n="lang_wis_short">[+Wis]</span> <span class="sub" name="attr_Wis"></span>
+                            </td>
+                            <td>
+                            <input class="" placeholder="0" type="number" name="attr_KnowledgeMod" value="(@{Knowledge}+@{Wis})" disabled="true">
+                            </td>
+                        </tr>
+                </table>
+
+                
+            </div>
+        </div>
+
+    </div>
+    <div class='container sheet-status'>
+        <h2 class="title is-2"><span data-i18n="lang_title_condition">Körperlicher und geistiger Zustand</span></h2>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <h2 class="title is-2"><span data-i18n="lang_title_persistentInfluences">Anhaltende Einflüsse</span></h2>
+                <table class="table is-fullwidth">
+                    <thead>
+                    <tr>
+                        <th data-i18n-title="lang_abbr_kind" title="[[@{set_lang_abbr_kind}]]"><span data-i18n="lang_kind">Art</span></th>
+                        <th data-i18n-title="lang_abbr_levels" title="[[@{set_lang_abbr_levels}]]" colspan="5"><span data-i18n="lang_levels">Stufen</span></th>
+                    </tr>
+                    </thead>                
+                    <tbody>
+                    <tr>
+                        <th><span data-i18n="lang_externalDamage">Äußerer Schaden</span></th>
+                        <td>
+                            <input type="checkbox" name="attr_ExternalDamage_1">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_ExternalDamage_2">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_ExternalDamage_3">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_ExternalDamage_4">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_ExternalDamage_5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span data-i18n="lang_innerDamage">Innerer Schaden</span></th>
+                        <td>
+                            <input type="checkbox" name="attr_InnerDamage_1">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_InnerDamage_2">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_InnerDamage_3">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_InnerDamage_4">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_InnerDamage_5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span data-i18n="lang_malusDamage">Malusschaden</span></th>
+                        <td>
+                            <input type="checkbox" name="attr_MalusDamage_1">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_MalusDamage_2">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_MalusDamage_3">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_MalusDamage_4">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_MalusDamage_5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span data-i18n="lang_paralysisDamage">Lähmungsschaden</span></th>
+                        <td>
+                            <input type="checkbox" name="attr_ParalysisDamage_1">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_ParalysisDamage_2">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_ParalysisDamage_3">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_ParalysisDamage_4">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_ParalysisDamage_5">
+                        </td>
+                    </tr>
+                    <tr><th colspan="5"><span data-i18n="lang_info_ParalysisDamage">(Lähmungsschaden, maximale Höhe: Ap)</span></th></tr>                    
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="column is-7">
+                <h2 class="title is-2"><span data-i18n="lang_title_protectionHealth">Schutz und Gesundheit</span></h2>
+                <table class="table is-fullwidth">
+                    <thead>
+                    <tr>
+                        <th colspan="4">&nbsp;</th>
+                    </tr>
+                    </thead>                
+                    <tbody>
+                    <tr>
+                        <th><span data-i18n="lang_armor">Panzerung</span></th>
+                        <td>
+                            <label class="checkbox">
+                            <input type="checkbox" name="attr_LightArmorPW1">
+                            <span data-i18n="lang_lightArmorPW1">Leicht (PW1)</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                            <input type="checkbox" name="attr_MediumArmorPW2">
+                            <span data-i18n="lang_mediumArmorPW2">Mittel (PW2)</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                            <input type="checkbox" name="attr_HeavyArmorPW3">
+                            <span data-i18n="lang_heavyArmorPW3">Schwer (PW3)</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span data-i18n="lang_bufferLP">Puffer-[LEP]</span></th>
+                        <td colspan="3">
+                            <input class="" placeholder="0" type="number" name="attr_BufferLP" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span data-i18n="lang_baseLP">Basis-[LEP]</span></th>
+                        <td>
+                            <input class="" placeholder="0" type="number" name="attr_BaseLP" value="0">
+                        </td>
+                        <td>
+                            <span data-i18n="lang_currentLP">Aktuelle [LEP]</span>
+                            
+                        </td>
+                        <td colspan="2">
+                          <input class="" placeholder="0" type="number" name="attr_CurrentLP" value="0">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+
+          <div class="columns is-mobile">
+            <div class="column">
+                <h2 class="title is-2"><span data-i18n="lang_title_actions">Handlungen</span></h2>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_actionPoints">Aktionspunkte [Ap]</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" type="number" name="attr_ActionPoints" value="0">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-7">
+                <table class="table is-fullwidth">                                    
+                    <tbody>
+                    <tr>
+                        <th><span data-i18n="lang_minusLP">Minus-[LEP]</span></th>
+                        <td>
+                            <label class="checkbox">
+                                <input type="checkbox" name="attr_MinusLP_1">
+                                -1
+                            </label>                            
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                                <input type="checkbox" name="attr_MinusLP_2">
+                                -2
+                            </label>                            
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                                <input type="checkbox" name="attr_MinusLP_3">
+                                -3
+                            </label>                            
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                                <input type="checkbox" name="attr_MinusLP_4">
+                                -4
+                            </label>                            
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                                <input type="checkbox" name="attr_MinusLP_5">
+                                -5
+                            </label>                            
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                                <input type="checkbox" name="attr_MinusLP_6">
+                                -6
+                            </label>                            
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                                <input type="checkbox" name="attr_MinusLP_7">
+                                -7
+                            </label>                            
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                                <input type="checkbox" name="attr_MinusLP_8">
+                                -8
+                            </label>                            
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                                <input type="checkbox" name="attr_MinusLP_9">
+                                -9
+                            </label>                            
+                        </td>
+                        <td>
+                            <label class="checkbox">
+                                <input type="checkbox" name="attr_MinusLP_10">
+                                -10
+                            </label>                            
+                        </td>
+                    </tr>   
+                    </tbody>
+                    </table>
+
+                    <p>
+                        <span data-i18n="lang_info_minusLP">Bei [Lep] &lt; 0 Verlust aller Coups / Ideen,  deren Benutzung unmöglich. Puffer-[Lep]=0 </span>
+                    </p>
+            </div>           
+        </div>
+        <div class="columns is-mobile">
+            <div class="column">
+                <h2 class="title is-2"><span data-i18n="lang_title_healingFactor">Heilfaktor</span></h2>
+                <table class="table is-fullwidth">              
+                    <tbody>
+                    <tr>
+                        <th><span data-i18n="lang_firstAidFactor">Erste Hilfe [Eh]</span></th>
+                        <td colspan="2">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_FirstAid_1">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_FirstAid_2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span data-i18n="lang_magicalElixirsHealing">Mag. Heilung [Mh] & Elixiere</span></th>
+                        <td>
+                            <input type="checkbox" name="attr_MagicalElixirsHealing_1">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_MagicalElixirsHealing_2">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_MagicalElixirsHealing_3">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_MagicalElixirsHealing_4">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="column is-7">
+                
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <h2 class="title is-2"><span data-i18n="lang_title_status">Zustände</span></h2>
+            </div>
+        </div>
+        <div class="columns is-mobile">
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Breathlessness">
+                    <span data-i18n="lang_info_breathlessness"><strong>Atemnot:</strong> Innerer Schaden Nebeneffekt: Abbau nur durch Luftzufuhr Abbau: Unempfindlichkeit (oder je nach Situation)</span>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Curse">
+                    <span data-i18n="lang_info_curse"><strong>Fluch:</strong> Malusschaden Nebeneffekt: Kann aus eigener Kraft keine anhaltenden Einflüsse abbauen  Abbau: Pro Segnung -1 Malusstufe  Helfen: Quelle des Fluchs wird vernichtet</span>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Tumbling">
+                    <span data-i18n="lang_info_tumbling"><strong>Taumeln:</strong> Lähmungsschaden Nebeneffekt: keiner Abbau: Akrobatik</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Blindness">
+                    <span data-i18n="lang_info_blindness"><strong>Blindheit:</strong> Malusschaden  Nebeneffekt: Bei Interaktionen mit der Umwelt: Malusstufen zählen doppelt Abbau: Erkennen</span>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Fear">
+                    <span data-i18n="lang_info_fear"><strong>Furcht:</strong> Malusschaden Nebeneffekt: Kann aus eigener Kraft keine anhaltenden Einflüsse abbauen Abbau: Pro Segnung -1 Malusstufe Helfen: Quelle des Fluchs wird vernichtet</span>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Trauma">
+                    <span data-i18n="lang_info_trauma"><strong>Trauma:</strong> Malusschaden  Nebeneffekt: INI 0: Geistschaden 1 Blutwürfel Abbau: Geistesstärke</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Bleeding">
+                    <span data-i18n="lang_info_bleeding"><strong>Blutung:</strong> Äußerer Schaden  Nebeneffekt: INI 0 - Schmerzschaden in Höhe eines Blutwürfels  Abbau: Unempfindlichkeit oder Erste Hilfe Helfen: 2 AP: Erste Hilfe </span>                   
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Illness">
+                    <span data-i18n="lang_info_illness"><strong>Krankheit:</strong> Malusschaden  Nebeneffekt: Alle Malusstufen-Zustände sind dauerhaft Abbau: Bei Regeneration: Erste Hilfe</span>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Combustion">
+                    <span data-i18n="lang_info_combustion"><strong>Verbrennung:</strong> Äußerer Schaden Nebeneffekt: keiner Abbau: Unempfindlichkeit  Helfen: 2 AP: Unempfindlichkeit</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Frostbite">
+                    <span data-i18n="lang_info_frostbite"><strong>Erfrierung:</strong> Äußerer Schaden Nebeneffekt: keiner Abbau: Unempfindlichkeit</span>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Silence">
+                    <span data-i18n="lang_info_silence"><strong>Stummheit:</strong> Malusschaden  Nebeneffekt: Kann keine Anweisungen geben Abbau: Redekunst</span>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Poisoning">
+                    <span data-i18n="lang_info_poisoning"><strong>Vergiftung:</strong> Innerer Schaden Nebeneffekt: keine Abbau: Unempfindlichkeit  Helfen: 2 AP: Erste Hilfe</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Fixation">
+                    <span data-i18n="lang_info_fixation"><strong>Fixierung:</strong> Lähmungsschaden Nebeneffekt: Bewegung nicht möglich Abbau: Akrobatik Helfen: 2 AP: Muskelspiel oder Angriffsprobe</span>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Deafness">
+                    <span data-i18n="lang_info_deafness"><strong>Taubheit:</strong> Malusschaden Nebeneffekt: Kann nichts hören Abbau: Aufmerksamkeit</span>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_Enchantment">
+                    <span data-i18n="lang_info_enchantment"><strong>Verzauberung:</strong> Lähmungsschaden  Nebeneffekt: keiner Abbau: Geistesstärke</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_additionalStatus_1">
+                    <textarea class="textarea" data-i18n-placeholder="lang_additionalStatus" placeholder="Zusätzlicher Zustand" name="attr_additionalStatusText_1"></textarea>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_additionalStatus_2">
+                    <textarea class="textarea" data-i18n-placeholder="lang_additionalStatus" placeholder="Zusätzlicher Zustand" name="attr_additionalStatusText_2"></textarea>
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" name="attr_additionalStatus_3">
+                    <textarea class="textarea" data-i18n-placeholder="lang_additionalStatus" placeholder="Zusätzlicher Zustand" name="attr_additionalStatusText_3"></textarea>
+                </label>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class='container sheet-skills'>
+        <h2 class="title is-2"><span data-i18n="lang_title_skills">Fertigkeiten</span></h2>
+        
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_skill">Fertigkeit</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_skill" placeholder="Fertigkeit" type="text" name="attr_SkillSet_1_Skill">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_general">Allg. </span> 
+                            <input type="checkbox" name="attr_SkillSet_1_General">
+                            
+                        </label>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_esprit">Esprit: </span> 
+                            <input type="checkbox" name="attr_SkillSet_1_Esprit">
+                        </label>
+
+                    </div>
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_roll">aus Rolle</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_roll" placeholder="aus Rolle" type="text" name="attr_SkillSet_1_FromRoll">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-gapless is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal sheet-has-border-bottom">
+                            <div class="field-label is-normal sheet-has-label-limitation">
+                            <label class="label"><span data-i18n="lang_description">Beschreibung</span>:</label>
+                            </div>
+                            <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                <textarea class="textarea" data-i18n-placeholder="lang_description" placeholder="Beschreibung" name="attr_SkillSet_1_Description"></textarea>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label"><span data-i18n="lang_skill">Fertigkeit</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_skill" placeholder="Fertigkeit" type="text" name="attr_SkillSet_2_Skill">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_general">Allg. </span> 
+                            <input type="checkbox" name="attr_SkillSet_2_General">
+                            
+                        </label>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_esprit">Esprit: </span> 
+                            <input type="checkbox" name="attr_SkillSet_2_Esprit">
+                        </label>
+
+                    </div>
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label"><span data-i18n="lang_roll">aus Rolle</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_roll" placeholder="aus Rolle" type="text" name="attr_SkillSet_2_FromRoll">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-gapless is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal sheet-has-border-bottom">
+                            <div class="field-label is-normal sheet-has-label-limitation">
+                                <label class="label"><span data-i18n="lang_description">Beschreibung</span>:</label>
+                            </div>
+                            <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                <textarea class="textarea" data-i18n-placeholder="lang_description" placeholder="Beschreibung" name="attr_SkillSet_2_Description"></textarea>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label"><span data-i18n="lang_skill">Fertigkeit</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_skill" placeholder="Fertigkeit" type="text" name="attr_SkillSet_3_Skill">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_general">Allg. </span> 
+                            <input type="checkbox" name="attr_SkillSet_3_General">
+                            
+                        </label>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_esprit">Esprit: </span> 
+                            <input type="checkbox" name="attr_SkillSet_3_Esprit">
+                        </label>
+
+                    </div>
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label"><span data-i18n="lang_roll">aus Rolle</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_roll" placeholder="aus Rolle" type="text" name="attr_SkillSet_3_FromRoll">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-gapless is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal sheet-has-border-bottom">
+                            <div class="field-label is-normal sheet-has-label-limitation">
+                                <label class="label"><span data-i18n="lang_description">Beschreibung</span>:</label>
+                            </div>
+                            <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                <textarea class="textarea" data-i18n-placeholder="lang_description" placeholder="Beschreibung" name="attr_SkillSet_3_Description"></textarea>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label"><span data-i18n="lang_skill">Fertigkeit</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_skill" placeholder="Fertigkeit" type="text" name="attr_SkillSet_4_Skill">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_general">Allg. </span> 
+                            <input type="checkbox" name="attr_SkillSet_4_General">
+                            
+                        </label>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_esprit">Esprit: </span> 
+                            <input type="checkbox" name="attr_SkillSet_4_Esprit">
+                        </label>
+
+                    </div>
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label"><span data-i18n="lang_roll">aus Rolle</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_roll" placeholder="aus Rolle" type="text" name="attr_SkillSet_4_FromRoll">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-gapless is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal sheet-has-border-bottom">
+                            <div class="field-label is-normal sheet-has-label-limitation">
+                                <label class="label"><span data-i18n="lang_description">Beschreibung</span>:</label>
+                            </div>
+                            <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                <textarea class="textarea" data-i18n-placeholder="lang_description" placeholder="Beschreibung" name="attr_SkillSet_4_Description"></textarea>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label"><span data-i18n="lang_skill">Fertigkeit</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_skill" placeholder="Fertigkeit" type="text" name="attr_SkillSet_5_Skill">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_general">Allg. </span> 
+                            <input type="checkbox" name="attr_SkillSet_5_General">
+                            
+                        </label>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_esprit">Esprit: </span> 
+                            <input type="checkbox" name="attr_SkillSet_5_Esprit">
+                        </label>
+
+                    </div>
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label"><span data-i18n="lang_roll">aus Rolle</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_roll" placeholder="aus Rolle" type="text" name="attr_SkillSet_5_FromRoll">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-gapless is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal sheet-has-border-bottom">
+                            <div class="field-label is-normal sheet-has-label-limitation">
+                                <label class="label"><span data-i18n="lang_description">Beschreibung</span>:</label>
+                            </div>
+                            <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                <textarea class="textarea" data-i18n-placeholder="lang_description" placeholder="Beschreibung" name="attr_SkillSet_5_Description"></textarea>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_skill">Fertigkeit</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_skill" placeholder="Fertigkeit" type="text" name="attr_SkillSet_6_Skill">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_general">Allg. </span>  
+                            <input type="checkbox" name="attr_SkillSet_6_General">
+                            
+                        </label>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_esprit">Esprit: </span> 
+                            <input type="checkbox" name="attr_SkillSet_6_Esprit">
+                        </label>
+
+                    </div>
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_roll">aus Rolle</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_roll" placeholder="aus Rolle" type="text" name="attr_SkillSet_6_FromRoll">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-gapless is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal sheet-has-border-bottom">
+                            <div class="field-label is-normal sheet-has-label-limitation">
+                            <label class="label"><span data-i18n="lang_description">Beschreibung</span>:</label>
+                            </div>
+                            <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                <textarea class="textarea" data-i18n-placeholder="lang_description" placeholder="Beschreibung" name="attr_SkillSet_6_Description"></textarea>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_skill">Fertigkeit</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_skill" placeholder="Fertigkeit" type="text" name="attr_SkillSet_7_Skill">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_general">Allg. </span>  
+                            <input type="checkbox" name="attr_SkillSet_7_General">
+                            
+                        </label>
+                    </div>
+                    <div class="column is-1">
+                        <label class="checkbox">
+                            <span data-i18n="lang_esprit">Esprit: </span> 
+                            <input type="checkbox" name="attr_SkillSet_7_Esprit">
+                        </label>
+
+                    </div>
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_roll">aus Rolle</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_roll" placeholder="aus Rolle" type="text" name="attr_SkillSet_7_FromRoll">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-gapless is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal sheet-has-border-bottom">
+                            <div class="field-label is-normal sheet-has-label-limitation">
+                            <label class="label"><span data-i18n="lang_description">Beschreibung</span>:</label>
+                            </div>
+                            <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                <textarea class="textarea" data-i18n-placeholder="lang_description" placeholder="Beschreibung" name="attr_SkillSet_7_Description"></textarea>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_expansionPower">Ausbaukraft</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_expansionPower" placeholder="Ausbaukraft" type="text" name="attr_ExpansionPowerSet_1_ExpansionPower">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_sEffect">S Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_sEffect" placeholder="S Effekt" type="text" name="attr_ExpansionPowerSet_1_S_Effect">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_gEffect">G Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_gEffect" placeholder="G Effekt" type="text" name="attr_ExpansionPowerSet_1_G_Effect_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_gEffect">G Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_gEffect" placeholder="G Effekt" type="text" name="attr_ExpansionPowerSet_1_G_Effect_2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_gEffect">G Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_gEffect" placeholder="G Effekt" type="text" name="attr_ExpansionPowerSet_1_G_Effect_3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_eEffect">E Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_eEffect" placeholder="E Effekt" type="text" name="attr_ExpansionPowerSet_1_E_Effect_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_eEffect">E Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_eEffect" placeholder="E Effekt" type="text" name="attr_ExpansionPowerSet_1_E_Effect_2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_eEffect">E Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_eEffect" placeholder="E Effekt" type="text" name="attr_ExpansionPowerSet_1_E_Effect_3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_mEffect">M Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_mEffect" placeholder="M Effekt" type="text" name="attr_ExpansionPowerSet_1_M_Effect_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_mEffect">M Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_mEffect" placeholder="M Effekt" type="text" name="attr_ExpansionPowerSet_1_M_Effect_2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal sheet-has-border-bottom">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_mEffect">M Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_mEffect" placeholder="M Effekt" type="text" name="attr_ExpansionPowerSet_1_M_Effect_3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_expansionPower">Ausbaukraft</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_expansionPower" placeholder="Ausbaukraft" type="text" name="attr_ExpansionPowerSet_2_ExpansionPower">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_sEffect">S Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_sEffect" placeholder="S Effekt" type="text" name="attr_ExpansionPowerSet_2_S_Effect">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_gEffect">G Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_gEffect" placeholder="G Effekt" type="text" name="attr_ExpansionPowerSet_2_G_Effect_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_gEffect">G Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_gEffect" placeholder="G Effekt" type="text" name="attr_ExpansionPowerSet_2_G_Effect_2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_gEffect">G Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_gEffect" placeholder="G Effekt" type="text" name="attr_ExpansionPowerSet_2_G_Effect_3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_eEffect">E Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_eEffect" placeholder="E Effekt" type="text" name="attr_ExpansionPowerSet_2_E_Effect_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_eEffect">E Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_eEffect" placeholder="E Effekt" type="text" name="attr_ExpansionPowerSet_2_E_Effect_2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_eEffect">E Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_eEffect" placeholder="E Effekt" type="text" name="attr_ExpansionPowerSet_2_E_Effect_3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_mEffect">M Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_mEffect" placeholder="M Effekt" type="text" name="attr_ExpansionPowerSet_2_M_Effect_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_mEffect">M Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_mEffect" placeholder="M Effekt" type="text" name="attr_ExpansionPowerSet_2_M_Effect_2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal sheet-has-border-bottom">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_mEffect">M Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_mEffect" placeholder="M Effekt" type="text" name="attr_ExpansionPowerSet_2_M_Effect_3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_expansionPower">Ausbaukraft</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_expansionPower" placeholder="Ausbaukraft" type="text" name="attr_ExpansionPowerSet_3_ExpansionPower">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_sEffect">S Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_sEffect" placeholder="S Effekt" type="text" name="attr_ExpansionPowerSet_3_S_Effect">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_gEffect">G Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_gEffect" placeholder="G Effekt" type="text" name="attr_ExpansionPowerSet_3_G_Effect_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_gEffect">G Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_gEffect" placeholder="G Effekt" type="text" name="attr_ExpansionPowerSet_3_G_Effect_2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_gEffect">G Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_gEffect" placeholder="G Effekt" type="text" name="attr_ExpansionPowerSet_3_G_Effect_3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_eEffect">E Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_eEffect" placeholder="E Effekt" type="text" name="attr_ExpansionPowerSet_3_E_Effect_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_eEffect">E Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_eEffect" placeholder="E Effekt" type="text" name="attr_ExpansionPowerSet_3_E_Effect_2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_eEffect">E Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_eEffect" placeholder="E Effekt" type="text" name="attr_ExpansionPowerSet_3_E_Effect_3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_mEffect">M Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_mEffect" placeholder="M Effekt" type="text" name="attr_ExpansionPowerSet_3_M_Effect_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_mEffect">M Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_mEffect" placeholder="M Effekt" type="text" name="attr_ExpansionPowerSet_3_M_Effect_2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <div class="field is-horizontal sheet-has-border-bottom">
+                            <div class="field-label is-normal">
+                            <label class="label"><span data-i18n="lang_mEffect">M Effekt</span>:</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                    <input class="" data-i18n-placeholder="lang_mEffect" placeholder="M Effekt" type="text" name="attr_ExpansionPowerSet_3_M_Effect_3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class='container sheet-battle'>
+        <h2 class="title is-2"><span data-i18n="lang_title_fight">Kampf</span></h2>
+
+        <input type="hidden" value="1" name="attr_Ap_1" />
+        <input type="hidden" value="2" name="attr_Ap_2" />
+        <input type="hidden" value="3" name="attr_Ap_3" />
+
+        <input type="hidden" value="0" name="attr_Dmg_0" />
+        <input type="hidden" value="1" name="attr_Dmg_1" />
+        <input type="hidden" value="2" name="attr_Dmg_2" />
+        <input type="hidden" value="3" name="attr_Dmg_3" />
+        <input type="hidden" value="4" name="attr_Dmg_4" />
+        <input type="hidden" value="5" name="attr_Dmg_5" />
+        <input type="hidden" value="6" name="attr_Dmg_6" />
+        <input type="hidden" value="7" name="attr_Dmg_7" />
+        <input type="hidden" value="8" name="attr_Dmg_8" />
+    
+
+        <table class="table is-hoverable is-striped is-fullwidth">
+            <thead>
+            <tr>
+                <th colspan="2"><span data-i18n="lang_weapon">Waffe dabei?</span></th>
+                <th data-i18n-title="lang_abbr_dmg" title="[[@{set_lang_abbr_dmg}]]"><span data-i18n="lang_dmg">Sch</span></th>
+                <th data-i18n-title="lang_abbr_ap" title="[[@{set_lang_abbr_ap}]]"><span data-i18n="lang_ap">Ap</span></th>
+                <th data-i18n-title="lang_abbr_skillValue" title="[[@{set_lang_abbr_skillValue}]]"><span data-i18n="lang_skillValue">Fw</span></th>
+                <th data-i18n-title="lang_abbr_attributeResponsible" title="[[@{set_lang_abbr_attributeResponsible}]]"><span data-i18n="lang_attr">Attribut</span></th>
+                <th><span data-i18n="lang_total">Summe</span></th>
+                <th><span data-i18n="lang_remarks">Anmerkungen</span></th>                
+            </tr>
+            </thead>
+            <tbody>
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_PunchActive" checked disabled="true">
+                    </td>
+                    <th><span data-i18n="lang_punch">Fausthieb</span></th>
+                    <td>
+                        <span name="attr_Dmg_0"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_1"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Punch">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_ath_short">[+Ath]</span> <span class="sub" name="attr_Ath"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_PunchMod" value="(@{Fw_Punch}+@{Ath})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_punch">Parade -3, außer Fausthiebe</span>
+                    </td>
+                </tr>
+
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_DaggersKnivesActive">
+                    </td>
+                    <th><span data-i18n="lang_daggersKnives">Dolche & Messer</span></th>
+                    <td>
+                        <span name="attr_Dmg_1"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_1"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_DaggersKnives">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_ges_short">[+Ges]</span>&nbsp;<span class="sub" name="attr_Ges"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_DaggersKnivesMod" value="(@{Fw_DaggersKnives}+@{Ges})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_daggersKnives">Giftverwendung / Parade -2, außer  Fausthiebe und Dolche & Messer</span>
+                    </td>
+                </tr>
+
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_FencingWeaponsActive">
+                    </td>
+                    <th><span data-i18n="lang_fencingWeapons">Fechtwaffen</span></th>
+                    <td>
+                        <span name="attr_Dmg_2"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_1"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_FencingWeapons">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_ath_short">[+Ath]</span> <span class="sub" name="attr_Ath"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_FencingWeaponsMod" value="(@{Fw_FencingWeapons}+@{Ath})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_fencingWeapons">Parade -1 pro gebundenem Gegner  über dem Ersten</span>
+                    </td>
+                </tr>
+
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_SwordsActive">
+                    </td>
+                    <th><span data-i18n="lang_swords">Schwerter</span></th>
+                    <td>
+                        <span name="attr_Dmg_3"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_2"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Swords">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_SwordsMod" value="(@{Fw_Swords}+@{Kkr})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_swords">Voll parierfähig</span>
+                    </td>
+                </tr>
+
+                <tr>                
+                    <td>
+                        <label class="checkbox">
+                        <input type="checkbox" name="attr_SaberActive">
+                        </label>      
+                    </td>
+                    <th><span data-i18n="lang_saber">Säbel</span></th>
+                    <td>
+                        <span name="attr_Dmg_4"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_2"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Saber">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_SaberMod" value="(@{Fw_Saber}+@{Kkr})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_saber">Parade -1</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox">
+                            <input type="checkbox" name="attr_SaberMountedActive">
+                        </label> 
+                    </td>
+                    <th class="text-indent"><span data-i18n="lang_weaponMounted">(...beritten)</span></th>
+                    <td>
+                        <span name="attr_Dmg_5"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_2"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_SaberMounted">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_SaberMountedMod" value="(@{Fw_SaberMounted}+@{Kkr})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_saber">Parade -1</span>
+                    </td>
+                </tr>
+
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_BlowWeaponsActive">
+                    </td>
+                    <th><span data-i18n="lang_blowWeapons">Schlagwaffen</span></th>
+                    <td>
+                        <span name="attr_Dmg_5"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_2"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_BlowWeapons">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_BlowWeaponsMod" value="(@{Fw_BlowWeapons}+@{Kkr})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_blowWeapons">Parade -2</span>
+                    </td>
+                </tr>
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_PolearmActive">
+                    </td>
+                    <th><span data-i18n="lang_polearm">Stangenwaffen</span></th>
+                    <td>
+                        <span name="attr_Dmg_6"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_3"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Polearm">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_PolearmMod" value="(@{Fw_Polearm}+@{Kkr})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_polearm">Parade kostet 2AP</span>
+                    </td>
+                </tr>
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_PolearmAgainstRidersActive">
+                    </td>
+                    <th class="text-indent"><span data-i18n="lang_againstRiders">(...geg. Reiter)</span></th>
+                    <td>
+                        <span name="attr_Dmg_8"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_3"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_PolearmAgainstRiders">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_PolearmAgainstRidersMod" value="(@{Fw_PolearmAgainstRiders}+@{Kkr})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_polearm">Parade kostet 2AP</span>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="attr_LancesActive">
+                    </td>
+                    <th><span data-i18n="lang_lances">Lanzen</span></th>
+                    <td>
+                        <span name="attr_Dmg_6"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_3"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Lances">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_LancesMod" value="(@{Fw_Lances}+@{Kkr})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_lances">Parade kostet 2AP</span>
+                    </td>
+                </tr>
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_LancesMountedActive">
+                    </td>
+                    <th class="text-indent"><span data-i18n="lang_weaponMounted">(...beritten)</span></th>
+                    <td>
+                        <span name="attr_Dmg_7"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_2"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_LancesMounted">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_LancesMountedMod" value="(@{Fw_LancesMounted}+@{Kkr})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_lances">Parade kostet 2AP</span>
+                    </td>
+                </tr>
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_SlingshotActive">
+                    </td>
+                    <th><span data-i18n="lang_slingshot">Schleuder</span></th>
+                    <td>
+                        <span name="attr_Dmg_1"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_2"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Slingshot">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_ges_short">[+Ges]</span> <span class="sub" name="attr_Ges"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_SlingshotMod" value="(@{Fw_Slingshot}+@{Ges})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_slingshot">Geschossgeeignet, Werfer muss freistehen</span>
+                        
+                    </td>
+                </tr>
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_PistolActive">
+                    </td>
+                    <th><span data-i18n="lang_pistol">Pistole</span></th>
+                    <td>
+                        <span name="attr_Dmg_3"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_2"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Pistol">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_sin_short">[+Sin]</span> <span class="sub" name="attr_Sin"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_PistolMod" value="(@{Fw_Pistol}+@{Sin})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_pistol">Immer freie Schussmöglichkeit</span>
+                    </td>
+                </tr>
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_CrossbowActive">
+                    </td>
+                    <th><span data-i18n="lang_crossbow">Armbrust</span></th>
+                    <td>
+                        <span name="attr_Dmg_5"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_3"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Crossbow">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_sin_short">[+Sin]</span> <span class="sub" name="attr_Sin"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_CrossbowMod" value="(@{Fw_Crossbow}+@{Sin})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_crossbow">Schütze muss freistehen</span>
+                    </td>
+                </tr>
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_MusketActive">
+                    </td>
+                    <th><span data-i18n="lang_musket">Muskete</span></th>
+                    <td>
+                        <span name="attr_Dmg_8"></span>
+                    </td>
+                    <td>
+                        <span name="attr_Ap_3"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Musket">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_sin_short">[+Sin]</span> <span class="sub" name="attr_Sin"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_MusketMod" value="(@{Fw_Musket}+@{Sin})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_musket">Schütze und Ziel müssen freistehen</span>
+                        
+                    </td>
+                </tr>
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_DodgeActive" checked disabled="true">
+                    </td>
+                    <th><span data-i18n="lang_dodge">Ausweichen</span></th>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <span name="attr_Ap_1"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Dodge">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_ath_short">[+Ath]</span> <span class="sub" name="attr_Ath"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_DodgeMod" value="(@{Fw_Dodge}+@{Ath})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_dodge">Pro geb. Gegner -1, Distanzangriffe -1</span>
+                    </td>
+                </tr>
+                <tr>                
+                    <td>
+                        <input type="checkbox" name="attr_ShieldActive">
+                    </td>
+                    <th><span data-i18n="lang_shield">Schildbenutzung</span></th>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Dmg_Shield">
+                    </td>
+                    <td>
+                        <span name="attr_Ap_1"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" value="0" type="number" name="attr_Fw_Shield">
+                    </td>
+                    <td>
+                        <span data-i18n="lang_kkr_short">[+Kkr]</span> <span class="sub" name="attr_Kkr"></span>
+                    </td>
+                    <td>
+                        <input class="" placeholder="0" type="number" name="attr_Sum_FwAttr_ShieldMod" value="(@{Fw_Shield}+@{Kkr}+@{Dmg_Shield})" disabled="true">                    
+                    </td>
+                    <td>
+                        <span data-i18n="lang_info_shield">Nur 1x pro Runde / Blockt Distanzangriffe</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <span data-i18n="lang_kkr_short">[+Kkr]</span> <span  name="attr_Kkr"></span>
+            </div>
+            <div class="column">
+                <span data-i18n="lang_ath_short">[+Ath]</span> <span  name="attr_Ath"></span>
+            </div>
+            <div class="column">
+                <span data-i18n="lang_ges_short">[+Ges]</span> <span  name="attr_Ges"></span>
+            </div>
+
+            <div class="column">
+                <span data-i18n="lang_sin_short">[+Sin]</span> <span  name="attr_Sin"></span>
+            </div>
+            <div class="column">
+                <span data-i18n="lang_wis_short">[+Wis]</span> <span  name="attr_Wis"></span>
+            </div>
+            <div class="column">
+                <span data-i18n="lang_wil_short">[+Wil]</span> <span  name="attr_Wil"></span>
+            </div>
+            <div class="column">
+                <span data-i18n="lang_initiative">Initiative</span> 
+                <input class="" placeholder="0" type="number" name="attr_LPMod" value="(@{Sin}+@{Ges})" disabled="true">
+            </div>
+        </div>
+
+
+        
+    </div>
+
+    <div class='container sheet-ownership'>
+        <h2 class="title is-2" ><span data-i18n="lang_title_possession">Besitz</span></h2>
+
+        <div class="columns is-mobile">
+            <div class="column">
+                <h2 class="title is-3" ><span data-i18n="lang_title_equipmentAndNotes">Ausrüstung und Notizen</span></h2>
+                <textarea class="textarea sheet-big-textarea" data-i18n-placeholder="lang_title_equipmentAndNotes" placeholder="Ausrüstung und Notizen" name="attr_EquipmentAndNotes"></textarea>                
+            </div>
+            <div class="column">
+                <h2 class="title is-3"><span data-i18n="lang_title_finance">Finanzen</span></h2>
+
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_maintenance">Unterhalt (Gulden)</span>:</label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_maintenance" placeholder="Unterhalt (Gulden)" type="number" name="attr_Maintenance">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_fortune">Aktuelles Vermögen</span>:</label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <input class="" data-i18n-placeholder="lang_fortune" placeholder="Aktuelles Vermögen" type="number" name="attr_Fortune">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_booty">Beutegut</span>:</label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                        <textarea class="textarea" data-i18n-placeholder="lang_booty" placeholder="Beutegut" name="attr_Booty"></textarea>                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <h2 class="title is-3"><span data-i18n="lang_title_clothingSets">Kleidungssets</span></h2>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_clothingSets_1">Set №1</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="" data-i18n-placeholder="lang_clothingSets_1" placeholder="Set №1" type="text" name="attr_ClothingSets_1">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_bonus">Bonus</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="" data-i18n-placeholder="lang_bonus" placeholder="Set №1 Bonus" type="text" name="attr_ClothingSets_Bonus_1">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_clothingSets_2">Set №2</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="" data-i18n-placeholder="lang_clothingSets_2" placeholder="Set №2" type="text" name="attr_ClothingSets_2">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label"><span data-i18n="lang_bonus">Bonus</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="" data-i18n-placeholder="lang_bonus" placeholder="Set №2 Bonus" type="text" name="attr_ClothingSets_Bonus_2">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <h2 class="title is-3"><span data-i18n="lang_title_constructionPoints">Konstruktionspunkte</span></h2>
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                    <label class="label"><span data-i18n="lang_constructionPoints">Konstruktions-punkte (KP)</span></label>
+                    </div>
+                    <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="" data-i18n-placeholder="lang_constructionPoints" placeholder="Konstruktionspunkte" type="number" name="attr_ConstructionPoints">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script type="text/worker">
+        on("sheet:opened", function(eventInfo){
+            setAttrs({
+                set_lang_act_general: getTranslationByKey("lang_act_general"),
+                set_lang_act_status: getTranslationByKey("lang_act_status"),
+                set_lang_act_skills: getTranslationByKey("lang_act_skills"),
+                set_lang_act_battle: getTranslationByKey("lang_act_battle"),
+                set_lang_act_ownership: getTranslationByKey("lang_act_ownership"),
+            });
+        });
+
+        const buttonlist = ["general","status","skills","battle","ownership","skills"];
+        buttonlist.forEach(button => {
+            on(`clicked:${button}`, function() {
+                setAttrs({
+                    sheetTab: button
+                });
+            });
+        });
+    </script>
+</div>
